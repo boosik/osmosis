@@ -54,6 +54,7 @@ func CreateUpgradeHandler(
 			AllowMessages: []string{
 				sdk.MsgTypeURL(&banktypes.MsgSend{}),
 				sdk.MsgTypeURL(&stakingtypes.MsgDelegate{}),
+				sdk.MsgTypeURL(&stakingtypes.MsgUndelegate{}),
 				sdk.MsgTypeURL(&stakingtypes.MsgBeginRedelegate{}),
 				sdk.MsgTypeURL(&stakingtypes.MsgCreateValidator{}),
 				sdk.MsgTypeURL(&stakingtypes.MsgEditValidator{}),
